@@ -35,6 +35,10 @@
         td[contenteditable="true"] {
             background-color: #222;
             color: white;
+            cursor: text;
+        }
+        td:focus {
+            outline: 2px solid #00ff00;
         }
     </style>
 </head>
@@ -50,15 +54,17 @@
         </thead>
         <tbody>
             <!-- Filas para rellenar -->
-            <script>
-                for (let i = 0; i < 16; i++) {
-                    document.write('<tr>');
-                    for (let j = 0; j < 3; j++) {
-                        document.write('<td contenteditable="true"></td>');
-                    }
-                    document.write('</tr>');
-                }
-            </script>
+            <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+            </tr>
+            <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+            </tr>
+            <!-- Agrega tantas filas como necesites -->
         </tbody>
     </table>
 </body>
