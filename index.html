@@ -30,7 +30,11 @@
             font-weight: bold;
         }
         td {
-            height: 40px; /* Para que las celdas tengan espacio para rellenar */
+            height: 40px;
+        }
+        td[contenteditable="true"] {
+            background-color: #222;
+            color: white;
         }
     </style>
 </head>
@@ -45,10 +49,14 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Generar 16 filas vacías -->
+            <!-- Filas para rellenar -->
             <script>
                 for (let i = 0; i < 16; i++) {
-                    document.write('<tr><td></td><td></td><td></td></tr>');
+                    document.write('<tr>');
+                    for (let j = 0; j < 3; j++) {
+                        document.write('<td contenteditable="true"></td>');
+                    }
+                    document.write('</tr>');
                 }
             </script>
         </tbody>
