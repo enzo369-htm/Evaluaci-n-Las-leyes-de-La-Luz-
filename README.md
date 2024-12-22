@@ -1,1 +1,0 @@
-# Evaluaci-n-Las-leyes-de-La-Luz-
