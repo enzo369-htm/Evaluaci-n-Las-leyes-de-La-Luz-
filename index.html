@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluación: Las Leyes de La Luz</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
         body {
             background-color: black;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
         }
         h1 {
             margin: 20px 0;
+            font-weight: 700;
+            text-decoration: underline;
         }
         table {
             margin: 0 auto;
             border-collapse: collapse;
-            width: 80%;
+            width: 90%;
         }
         th, td {
             border: 1px solid white;
@@ -27,7 +31,8 @@
             text-align: center;
         }
         th {
-            font-weight: bold;
+            font-weight: 700;
+            text-decoration: underline;
         }
         td {
             height: 40px;
@@ -35,6 +40,10 @@
         td[contenteditable="true"] {
             background-color: #222;
             color: white;
+            cursor: text;
+        }
+        td:focus {
+            outline: 2px solid #00ff00;
         }
     </style>
 </head>
@@ -63,6 +72,7 @@
     </table>
 </body>
 </html>
+
 
 
 
