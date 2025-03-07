@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lirio&display=swap');
+
+body {
+    background-color: black;
+    color: yellow;
+    font-family: 'Lirio', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    font-size: 24px;
+    text-decoration: underline;
+    color: #FFEB3B;
+}
+
+.cuadrado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 90vw;
+    height: 90vh;
+    background-color: #FFEB3B;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.cuadrante {
+    background-color: #FFEB3B;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.subtitulo {
+    font-size: 18px;
+    color: black;
+    text-decoration: underline;
+}
+
+textarea {
+    width: 90%;
+    height: 80%;
+    border: none;
+    background-color: #FFEB3B;
+    color: black;
+    font-size: 16px;
+    font-family: 'Lirio', sans-serif;
+    outline: none;
+    resize: none;
+}
