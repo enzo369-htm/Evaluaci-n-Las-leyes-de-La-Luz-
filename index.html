@@ -4,66 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuadrado de la Ley</title>
-    <style>
-        body {
-            background-color: #FDD835;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            text-decoration: underline;
-            color: black;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            width: 400px;
-            height: 400px;
-            background-color: black;
-            position: relative;
-            gap: 2px;
-        }
-        .quadrant {
-            background-color: white;
-            color: black;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        .star {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Cuadrado de la Ley</h1>
-        <div class="grid">
-            <div class="quadrant">Referente 1<br><br>________________<br><br>________________<br><br>________________</div>
-            <div class="quadrant">Referente 2<br><br>________________<br><br>________________<br><br>________________</div>
-            <div class="quadrant">Referente 3<br><br>________________<br><br>________________<br><br>________________</div>
-            <div class="quadrant">Referente 4<br><br>________________<br><br>________________<br><br>________________</div>
-            <img src="star.png" alt="Estrella dorada" class="star">
+    <h1 class="titulo">Cuadrado de la Ley</h1>
+    <div class="cuadrado">
+        <div class="cuadrante">
+            <h2 class="subtitulo">Referente 1</h2>
+            <textarea></textarea>
+        </div>
+        <div class="cuadrante">
+            <h2 class="subtitulo">Referente 2</h2>
+            <textarea></textarea>
+        </div>
+        <div class="cuadrante">
+            <h2 class="subtitulo">Referente 3</h2>
+            <textarea></textarea>
+        </div>
+        <div class="cuadrante">
+            <h2 class="subtitulo">Referente 4</h2>
+            <textarea></textarea>
         </div>
     </div>
 </body>
 </html>
-
 
 
 
