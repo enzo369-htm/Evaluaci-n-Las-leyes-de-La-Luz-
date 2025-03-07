@@ -3,73 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluación: Las Leyes de La Luz</title>
+    <title>Cuadrado de la Ley</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
         body {
-            background-color: black;
-            color: white;
-            font-family: 'Roboto', Arial, sans-serif;
-            text-align: center;
+            background-color: #FDD835;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
         }
         h1 {
-            margin: 20px 0;
-            font-weight: 700;
             text-decoration: underline;
+            color: black;
         }
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: 90%;
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            position: relative;
+            gap: 2px;
         }
-        th, td {
-            border: 1px solid white;
+        .quadrant {
+            background-color: white;
+            color: black;
             padding: 10px;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
         }
-        th {
-            font-weight: 700;
-            text-decoration: underline;
-        }
-        td {
-            height: 40px;
-        }
-        td[contenteditable="true"] {
-            background-color: #222;
-            color: white;
-            cursor: text;
-        }
-        td:focus {
-            outline: 2px solid #00ff00;
+        .star {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <h1>Evaluación: Las Leyes de La Luz</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>SAKA KIRIYA</th>
-                <th>SUAYAMVARA</th>
-                <th>BUMISPARSHA</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Filas para rellenar -->
-            <script>
-                for (let i = 0; i < 16; i++) {
-                    document.write('<tr>');
-                    for (let j = 0; j < 3; j++) {
-                        document.write('<td contenteditable="true"></td>');
-                    }
-                    document.write('</tr>');
-                }
-            </script>
-        </tbody>
-    </table>
+    <div class="container">
+        <h1>Cuadrado de la Ley</h1>
+        <div class="grid">
+            <div class="quadrant">Referente 1<br><br>________________<br><br>________________<br><br>________________</div>
+            <div class="quadrant">Referente 2<br><br>________________<br><br>________________<br><br>________________</div>
+            <div class="quadrant">Referente 3<br><br>________________<br><br>________________<br><br>________________</div>
+            <div class="quadrant">Referente 4<br><br>________________<br><br>________________<br><br>________________</div>
+            <img src="star.png" alt="Estrella dorada" class="star">
+        </div>
+    </div>
 </body>
 </html>
 
