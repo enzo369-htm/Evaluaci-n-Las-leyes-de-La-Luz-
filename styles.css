@@ -1,39 +1,29 @@
-/* Estilos generales */
-body {
-    background-color: #FFEB3B; /* Fondo amarillo */
-    font-family: 'Lirio', sans-serif; /* Fuente Lirio */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+ </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box small">
+            <h2>4 Referentes Sutiles</h2>
+            <textarea></textarea>
+        </div>
+        <div class="box small">
+            <h2>Referentes Semanales</h2>
+            <textarea></textarea>
+        </div>
+        <div class="box large">
+            <h2>Fallas Diarias</h2>
+            <textarea></textarea>
+        </div>
+        <div class="box large">
+            <h2>Avance Diario</h2>
+            <textarea></textarea>
+        </div>
+        <div class="box full-height">
+            <h2>Repetición</h2>
+            <textarea></textarea>
+        </div>
+    </div>
+</body>
+</html>
 
-/* Contenedor principal */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    width: 90vw;
-    max-width: 800px;
-}
-
-/* Cuadros de texto */
-.text-box {
-    background-color: white; /* Fondo blanco */
-    color: black; /* Letra negra */
-    border: 2px solid black;
-    padding: 10px;
-    min-height: 150px;
-    overflow-y: auto; /* Escritura infinita desplazando hacia abajo */
-}
-
-/* Títulos */
-.text-box h2 {
-    text-decoration: underline;
-    color: black; /* Letra negra */
-    text-align: center;
-}
 
